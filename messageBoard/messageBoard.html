@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>留言板</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="messageBoard.css">
+</head>
+<body>
+
+    <div class="container"> 
+        <image id="background" src="../img/messageBoard_bg.png"></image>
+        <image id="logo" src="../img/logo.png" style="-webkit-filter:brightness(140%)"></image>
+
+        <div id="wrn">
+            <h4>終於來到漫遊台大的「最後一站」</h4>
+            <h4>本團隊邀請你在此處留下新一年的期望或是煩惱</h4>
+            <h4>也可以留下任何想要說的話</h4>
+
+            <h4>祝你一切都好，有煩惱、也有想通</h4>
+            <h4>漫遊台大團隊 筆</h4>
+
+        </div>
+
+        <div class="text-block" id="tb" >
+            <h4>漫遊者之歌</h4>
+            <hr>
+            <br>
+            <iframe id="google" src="https://script.google.com/macros/s/AKfycbzlmUHshf8RvUnr5vQiK90s_PXknDA2a5MxgSHhFFast012oorHIb8CYdJGggKDpJ0SJA/exec" allowTransparency="true"></iframe>
+            
+            <form action="https://sheetdb.io/api/v1/kwkyxh69ypl4y" method="POST" id="sheetdb-form">
+                <input id="text" name="data[Message]" placeholder="請輸入訊息 ..." maxlength="29" autocomplete="off"/>
+                <button id="btn" type="submit">送出訊息</button>
+            </form>
+            
+        </div> 
+      
+     
+    </div>
+    <a style="text-decoration:none;" href="../Code/mainpage.html" id="back">  回到首頁</a>
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method : "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // Clear the form
+                document.getElementById("sheetdb-form").reset();
+                // refresh the iframe
+                var iframe = document.getElementById("google");
+                iframe.src = iframe.src;
+            });
+        });
+    </script>
+</body>
+</html>

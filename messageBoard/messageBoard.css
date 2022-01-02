@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height:100%;
+    width:100%;
+    overflow: hidden; /*hide the scroll bar*/
+    background-size: 100%;
+    background-color: rgb(13,20,30);
+    font-family: 'Noto Serif TC', serif;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    right:3%;
+    width: 225x;
+    height: 180px;
+    z-index:300;
+}
+
+#wrn{
+    position: absolute;
+    width:30%;
+    height:35%;
+    top:20%;
+    right:21%;
+    background-color: rgba(15, 15, 15, 0.89);
+    color:white;
+    text-align: center;
+    line-height: 180%;
+    z-index: 400;
+    animation: app 10s;
+    -webkit-animation: app 10s;
+    animation-fill-mode: forwards;
+    animation-play-state:running;
+
+}
+
+@keyframes app{
+    0%{opacity: 1;
+        width: 60%; 
+        color:white;}
+    80%{opacity: 1;
+        width: 60%;
+        color:white;}
+    85%{opacity: 1;
+        width: 60%;
+        color:transparent;}
+    90%{opacity: 1;
+        width: 60%; 
+        color:transparent;}   
+    100%{opacity: 0;  width: 0%; color:transparent;}}
+
+@-webkit-keyframes app{
+    0%{opacity: 1;
+        width: 60%; 
+        color:white;}
+    80%{opacity: 1;
+        width: 60%;
+        color:white;}
+        85%{opacity: 1;
+            width: 60%;
+            color:transparent;}
+        90%{opacity: 1;width: 60%; color:transparent;
+}   
+    100%{  opacity: 0;  width: 0%; color:transparent;}}
+
+
+#background {
+    opacity: 1;
+    /*margin-top: -455px; adjust the vertical position of the image*/
+    height:100%;
+    width:100%;    
+    /*filter:brightness(30%); darkness of the image*/
+    z-index: 100;
+}
+
+.container {
+    position: absolute;
+    z-index: 0;
+}
+
+#tb {
+    opacity: 1;
+    /*position*/
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    /*size of block*/
+    width: 55%;
+    height: 65%;
+
+    /*text*/
+    text-align: center;
+    line-height: 180%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white; 
+
+    /*border*/
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+
+    z-index: 3;
+    animation: ap 11s;
+    -webkit-animation: ap 11s;
+    animation-fill-mode: forwards;
+    animation-play-state:running;
+
+}
+
+@keyframes ap{
+    0%{opacity: 0;
+        width: 0%; }
+    80%{opacity: 0;
+        width: 55%;}
+        97%{opacity: 1;
+            width: 55%;}   
+    100%{  opacity: 1;  width: 55%;}
+}
+@-webkit-keyframes ap{
+    0%{opacity: 0;
+        width: 0%; }
+    80%{opacity: 0;
+        width: 55%;}
+        97%{opacity: 1;
+            width: 55%;}   
+    100%{  opacity: 1;  width: 55%;}
+}
+
+.text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.text-block h4{
+    letter-spacing: 0.2em;
+    line-height: 70%;
+    font-size: 0.45cm;
+}
+
+.text-block hr{
+    height:0.1px;
+    border-width:0.05px;
+    color:white;
+}
+
+
+iframe{
+    border: 0;
+    margin:0%;
+    width: 85%;
+    height: 350px;
+    border-color: rgb(0, 0, 0);
+    /*border-style: solid;*/
+    background-color: transparent;
+}
+
+#sheetdb-form{
+    position: relative;
+    left: 40%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    margin-top: 1.5%;
+    margin-left: 9.5%;
+    padding: 0;
+}
+
+#sheetdb-form button{
+
+    margin: 0;
+    margin-left: 1.5%;
+    width: 14%;
+    height: 45px;
+    display: inline-block;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+    font-size: 0.4cm;
+    font-weight: 550;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+}
+#sheetdb-form input{
+    margin: 10px;
+    padding-left: 3%;
+
+    width: 74%;
+    height: 40px;
+    display: inline-block;
+    border-color: white;
+    border-style:hidden;
+    background-color: rgba(255, 255, 255, 0.234);
+    color: white;
+    font-size: 0.4cm;
+    font-weight: 450;
+    text-align: left;
+}
+/*When the cursor move over the option, it will show in this style.*/
+#sheetdb-form button:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+/*When the cursor clicks the button, it will show in this style in that moment.*/
+#sheetdb-form button:active{
+    background-color:rgb(0, 0, 0);
+    color:white;
+}
+
+/*Set the style of input placeholder*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 0.6; /* Firefox */
+    font-weight: 500;
+    font-family: 'Noto Serif TC', serif;
+}
+
+#back{
+    position: absolute;
+    line-height: 0px;
+    top: 76%;
+    right:22.5%;
+    width: 130px;
+    height: 20px;
+    opacity: 0;
+/*border*/
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.39);
+    padding:20px 5px 5px 5px;
+/*font*/
+    color: white;
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: center;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    animation: btap 15s;
+    -webkit-animation: btap 15s;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+}
+@keyframes btap{
+    80%{opacity: 0;}
+    90%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@-webkit-keyframes btap{
+    80%{opacity: 0;}
+    90%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+/* start結束 */
+#back:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    }
