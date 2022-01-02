@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2021 漫遊台大 - The Promenade</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../Desktop/Code/mainpage.css">
+        <link rel="icon" href="../img/logo_icon.png" type="image/icon type" >
+    
+    </head>
+
+    <body>
+        <div id="play"></div>
+        <div id="warn"><h4 id="wr">- 點擊以繼續 -</h4></div>
+
+        <div id="anima">
+        <div id="pre"></div>
+        <div id="w1"><h4>漫</h4></div>
+        <div id="w2"><h4>遊</h4></div>
+        <div id="w3"><h4>臺</h4></div>
+        <div id="w4"><h4>大</h4></div>
+        <div id="en"><image id="en2" src="../img/enframe2.png" style="-webkit-filter:brightness(-200%)"></image></div>
+        </div>
+
+
+        <div class="content" style="letter-spacing: 8pt;">
+            <h4>2022漫遊臺大</h4>
+            <p>
+            <h4>The Promenade</h4>
+        </div>
+ 
+        <image id="logo" src="../img/logo.png" style="-webkit-filter:brightness(140%)"></image>
+
+        <div class="container">
+         
+            <!--靜音自動播放-->
+                <video autoplay muted loop  id="background" style="-webkit-filter:brightness(70%)" >
+                    <source src="https://imgur.com/XpceYIP.mp4" type="video/mp4">
+
+                  </video>
+           
+        </div>
+        
+        <nav class="left" id="left">
+            
+            <ul class="navigation" id="navigation">
+                <li><a href="#" data-target="tab_1" class="tabs tabs_active" id="tab_main"> 首頁 </a></li>
+                <li><a href="#" data-target="tab_2" class="tabs" id="tab_about"> 關於漫遊臺大 </a></li>
+                <li><a href="#" data-target="tab_3" class="tabs" id="tab_team"> 認識開發團隊 </a></li>
+                <li><a href="#" data-target="tab_4" class="tabs" id="tab_guestbook"> 漫遊者之歌 </a></li>
+            </ul>
+            
+        </nav>
+
+        <div class="contentdown" style="letter-spacing: 2pt; ">
+            <div class="block" id="tab_1" style="display:block">
+                <h4>歡迎來到「漫遊臺大 The Promenade」 </h4>
+                <h4>以下幾點事項請參與者注意：</h4>
+
+                <li><h4>&nbsp此活動無法為您解決任何煩惱，但可以舒緩您焦慮失措的不安感</h4></li>
+                <li><h4>&nbsp希望參與者可以暫時放下手邊事務，全心全意逃離圖書館</h4></li>
+                <li><h4>&nbsp本活動全程匿名且不會蒐集任何您的個人資料，請放心投入其中</h4></li>
+                <h4>（整場線上互動活動預估五分鐘）</h4>
+                <!--
+                <h4>你正在圖書館為即將到來的考試苦苦掙扎嗎？</h4>
+                <h4>你正因無法理解的教科書與教授而感到痛苦嗎？</h4>
+                <h4>不論是為學業、生活、情感、還是迷茫的未來所困的你，</h4>
+                <h4>喘口氣，一起逃離圖書館吧！</h4><br>-->
+                <a style="text-decoration:none;" href="./subpage.html" id="start"> &nbsp  漫遊起步走  ➞</a>
+            </div>
+
+            <div class="block" id="tab_2">
+                <h4>關於漫遊臺大</h4>
+                <h4>漫遊臺大是設計給受困於圖書館，正為期末考而受苦的學生<br>  
+                    本活動始於圖書館、終於校園內外任何一處<br>
+                    引導參與者（Promenader）離開書堆到校園附近遛躂<br>
+                    路途中可能遇見不一樣的人、到達其從未走過的風景<br>
+                    本活動尾聲將回饋其一張票券，內含途經地點與本團隊建議的放鬆歌單<br><br>
+                    若您正在圖書館掙扎於將到來的考試、抑或苦痛於無法理解的教科書與教授之間<br>
+                    甚至是為生活、情感、迷茫未來所困，誠摯地邀請您參與這個的活動</h4>
+            </div>
+
+            <div class="block" id="tab_3">
+                <div><h4>認識開發團隊</h4></div>
+
+                <div class="flex">
+
+                    <div class="member_photo">
+                        <div id="photo_1"><img src="../img/photo_1.jpg"/></div>
+                        <div id="photo_2"><img src="../img/photo_2.jpg"/></div>
+                        <div id="photo_3"><img src="../img/photo_3.jpg"/></div>
+                        <div id="photo_4"><img src="../img/photo_4.jpg"/></div>
+                    </div>
+
+                    <div class="member_intro">
+                        <div id="intro_1"><h5>大氣科學系四年級 黃聖丰<br>「你以為我吃素的？對啊～我就是！」</h5></div>
+                        <div id="intro_2"><h5>圖書資訊學系三年級 李家瑄<br>「要放寒假了，真是萬幸。」</h5></div>
+                        <div id="intro_3"><h5>圖書資訊學系三年級 林倢<br>「資組好多，機讀格式吃大便！」</h5></div>
+                        <div id="intro_4"><h5>外國語文學系五年級 周奕萱<br>「必殺技！大～岩（延）～壁（畢）！」</h5></div>
+                    </div>
+
+                </div>
+
+            </div>
+        
+
+            <div class="block" id="tab_4">
+                <h4>漫遊者之歌</h4>
+                <!--留言板先放在這裡，iframe的格式設定在css最底下，可以再做調整 by聖丰-->
+                <iframe id="google" src="https://script.google.com/macros/s/AKfycbzlmUHshf8RvUnr5vQiK90s_PXknDA2a5MxgSHhFFast012oorHIb8CYdJGggKDpJ0SJA/exec" allowTransparency="true"></iframe>    
+            </div>
+            
+        </div>
+
+        <script src="../Desktop/Code/mainpage.js"></script>
+    </body>
+</html>
