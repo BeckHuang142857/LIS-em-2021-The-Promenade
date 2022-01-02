@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height:100%;
+    width:100%;
+    overflow:hidden; /*hide the scroll bar*/
+    background-color: rgb(13,20,30);
+    font-family: 'Noto Serif TC', serif;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    right:3%;
+    width: 225x;
+    height: 180px;
+    z-index:300;
+}
+
+#background {
+    /*margin-top: -455px; adjust the vertical position of the image*/
+    height:100%;
+    width:100%;    
+    /*filter:brightness(30%); darkness of the image*/
+    z-index: 100;
+}
+
+.container {
+    position: relative;
+
+}
+  
+#hr{
+    opacity: 1;
+    position: absolute;
+    border: white 0.4px solid;
+    top: 10%;
+    right: 0%;
+    width: 110%;
+    height: 0px;
+}
+#tb {
+    /*position*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    /*size of block*/
+    width: 55%;
+    height: 65%;
+
+    /*text*/
+    text-align: center;
+    line-height: 180%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white; 
+
+    /*border*/
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+
+    z-index: 1;
+    
+    animation:  tk 5s ;
+    -webkit-animation: tk 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+}
+
+@keyframes tk{
+ 100%{
+    border-radius: 30px;
+    border-width: 1px;
+    height: 50%;
+ }
+}
+
+@-webkit-keyframes tk{
+ 100%{
+    border-radius: 30px;
+    border-width: 1px;
+    height: 50%;
+ }
+}
+
+#nextBtn2{
+    position: absolute;
+    top: 70.5%;
+    right: 22.5%;
+    width: 160px;
+    height: 48px;
+    border-color: white;
+    border: 2px;
+    border-style: solid ;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    line-height: 1cm;
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+    font-family: 'Noto Serif TC', serif;
+
+    /*animation*/
+    animation: fadbt 3s ;
+    -webkit-animation: fadbt 3s ;
+    animation-fill-mode : forwards;
+    animation-play-state: paused;
+    z-index: -10;
+}
+#nextBtn2:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+
+@keyframes fadbt
+{   
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes fadbt /* Safari and Chrome */
+{
+    0%{opacity: 1;}
+
+    100%{opacity: 0;}
+}
+
+.text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.text-block h4{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.4cm;
+}
+
+.text-block p{
+    margin-top: -3px;
+    font-size: 0.45cm;
+    font-weight: 550;
+}
+
+.text-block hr{
+    height:0.1px;
+    border-width:0.05px;
+    color:white;
+}
+
+#option{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    margin-top: 1.5%;
+    padding: 0;
+    width: 600px;
+}
+
+.nextBtn{
+    position: absolute;
+    top: 74.5%;
+    right: 22.5%;
+    width: 250px;
+    height: 50px;
+
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.nextBtn:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+#nextBtn1{
+    top: 74.5%;
+    right: 35%;
+    animation: vani 3s;
+    -webkit-animation:vani 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes vani{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes vani{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+#nextBtn2{
+opacity: 0;
+animation: vani2 3s;
+-webkit-animation:vani2 3s;
+animation-play-state: paused;
+animation-fill-mode: forwards;
+
+}
+@keyframes vani2{
+
+100%{opacity: 1;}
+}
+
+@-webkit-keyframes vani2{
+
+100%{opacity: 1;}
+}
+
+
+
+
+#music{
+    position: absolute;
+    z-index: 100;
+    top:91.1%;
+    right:79.15%;
+}
+
+#vanish{
+    animation: van 3s;
+    -webkit-animation:van 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes van{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes van{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#altt{
+    font-family: 'Oooh Baby', cursive;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    line-height: 80%;
+    font-size: 0.8cm;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top:15%;
+    right:34%;
+    animation:alapp 5s;
+    -webkit-animation:alapp 5s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes alapp{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes alapp{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#ingri{
+    font-family: 'Oooh Baby', cursive;
+    letter-spacing: 0.4em;
+    line-height: 80%;
+    font-size: 0.5cm;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top:20%;
+    right:60%;
+    animation:app 3s;
+    -webkit-animation:app 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes app{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes app{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#ingri h4#title{
+    font-family: 'Oooh Baby', cursive;
+    font-size: 0.5cm;
+}
+
+#sen{
+    font-family: 'Oooh Baby', cursive;
+    letter-spacing: 0.4em;
+    line-height: 80%;
+    font-size: 0.5cm;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top:23%;
+    right:18%;
+    animation:app2 3s;
+    -webkit-animation:app2 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes app2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes app2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#date{
+    font-family: 'Oooh Baby', cursive;
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.3cm;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top:90%;
+    right:10%;
+    animation:app3 3s;
+    -webkit-animation:app3 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes app3{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes app3{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#chat1{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.5cm;
+    opacity: 1;
+    position: absolute;
+    top:40%;
+    right:15%;
+    color:transparent;
+}
+#chat2{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.5cm;
+    opacity: 1;
+    position: absolute;
+    top:40%;
+    right:15%;
+    color:transparent;
+}
+#chat3{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.5cm;
+    opacity: 1;
+    position: absolute;
+    top:40%;
+    right:15%;
+    color:transparent;
+}
+#tip{
+    color: grey;
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.5cm;
+    opacity: 0;
+    position: absolute;
+    top:60%;
+    right:38%;
+    animation: light 3s  infinite linear alternate;
+    -webkit-animation: light 3s infinite linear alternate;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+}
+@keyframes light{
+    30%{opacity: 1;}
+}
+@-webkit-keyframes light{
+    30%{opacity: 1;}
+}
+
+
+#bk{  
+    opacity: 0;
+    width: 22cm;
+    height: 0.8cm;
+    position: absolute;
+    top:43.3%;
+    right: -17.7%;
+    background-color: black;
+    z-index: 99;
+    animation: typ 8s steps(25);
+    -webkit-animation:typ 8s  steps(25);
+    /*非連續動畫 字距問題不能中英同時處理*/
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+
+  @keyframes typ{
+    100%{right: -40%;}
+  }
+  @-webkit-keyframes typ{
+    100%{right: -90%;}
+  }
+
+#bk2{
+    opacity: 0;
+    width: 22cm;
+    height: 0.8cm;
+    position: absolute;
+    top:43.3%;
+    right: -17.7%;
+    background-color: black;
+    z-index: 99;
+    animation: typ2 8s steps(25);
+    -webkit-animation:typ2 8s  steps(25);
+    /*非連續動畫 字距問題不能中英同時處理*/
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+
+  @keyframes typ2{
+    100%{right: -40%;}
+  }
+  @-webkit-keyframes typ2{
+    100%{right: -90%;}
+  }
+
+#bk3{
+    opacity: 0;
+    width: 22cm;
+    height: 0.8cm;
+    position: absolute;
+    top:43.3%;
+    right: -17.7%;
+    background-color: black;
+    z-index: 99;
+    animation: typ3 8s steps(25);
+    -webkit-animation:typ3 8s  steps(25);
+    /*非連續動畫 字距問題不能中英同時處理*/
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+
+  @keyframes typ3{
+    100%{right: -40%;}
+  }
+  @-webkit-keyframes typ3{
+    100%{right: -90%;}
+  }
+
+
+  #wh{
+    opacity: 0;
+    width: 0.06cm;
+    height: 0.8cm;
+    position: absolute;
+    top:1%;
+    right: 100%;
+    background-color:white;
+    z-index: 100;
+    animation: ani 0.8s steps(1)  infinite;
+    -webkit-animation:ani 0.8s  steps(1)  infinite;
+    animation-play-state: paused;
+  }
+  
+
+  @keyframes ani{
+    1%{opacity: 1;}
+    50%{opacity: 0;}
+}
+    @-webkit-keyframes ani{
+    1%{opacity: 1;}
+    50%{opacity: 0;}
+
+    }
+
+    #wh2{
+
+        opacity: 0;
+        width: 0.06cm;
+        height: 0.8cm;
+        position: absolute;
+        top:1%;
+        right: 100%;
+        background-color:white;
+        z-index: 100;
+        animation: ani2 0.8s steps(1)  infinite;
+        -webkit-animation:ani2 0.8s  steps(1)  infinite;
+        animation-play-state: running;
+      }
+      
+    
+      @keyframes ani2{
+        1%{opacity: 1;}
+        50%{opacity: 0;}
+    }
+        @-webkit-keyframes ani2{
+        1%{opacity: 1;}
+        50%{opacity: 0;}
+    
+        }
+    
+    #wh3{
+        opacity: 0;
+        width: 0.06cm;
+        height: 0.8cm;
+        position: absolute;
+        top:1%;
+        right: 100%;
+        background-color:white;
+        z-index: 100;
+        animation: ani3 0.8s steps(1)  infinite;
+        -webkit-animation:ani3 0.8s  steps(1)  infinite;
+        animation-play-state: running;
+      }
+      
+    
+      @keyframes ani3{
+        1%{opacity: 1;}
+        50%{opacity: 0;}
+    }
+        @-webkit-keyframes ani3{
+        1%{opacity: 1;}
+        50%{opacity: 0;}
+    
+        }
+
+
+    #Btn1{
+    position: absolute;
+    top: 65.5%;
+    right: 34%;
+    width: 250px;
+    height: 50px;
+    opacity: 0;
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+    z-index: 100;
+    font-family: 'Noto Serif TC', serif;
+    }
+    #Btn1:hover{
+        background-color:rgba(245, 245, 245, 0.233);
+
+    }
+
+

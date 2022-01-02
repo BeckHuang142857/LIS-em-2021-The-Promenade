@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height:100%;
+    width:100%;
+    overflow: hidden; /*hide the scroll bar*/
+    background-size: 100%;
+    background-color: rgb(13,20,30);
+    font-family: 'Noto Serif TC', serif;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    right:3%;
+    width: 225x;
+    height: 180px;
+    z-index:300;
+}
+
+
+
+#background {
+    opacity: 1;
+    /*margin-top: -455px; adjust the vertical position of the image*/
+    height:100%;
+    width:100%;    
+    /*filter:brightness(30%); darkness of the image*/
+    z-index: 100;
+    -webkit-filter: grayscale(100%);
+
+}
+
+.container {
+    position: relative;
+}
+
+#bt{
+    text-align: center;
+    margin: 10px;
+    padding-left: 3%;
+    width: 200px;
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+    font-size: 0.38cm;
+    font-weight: 550;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/*When the cursor move over the option, it will show in this style.*/
+#bt:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+/*When the option have been clicked, it will show in this style.*/
+#bt:focus{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+#s1{
+    position: absolute;
+    top:30%;
+    right:20%;
+    opacity: 1;
+    animation: s1ap 3s forwards;
+    -webkit-animation: s1ap 3s forwards;
+    animation-play-state: paused;
+    z-index: 11;
+}
+
+@keyframes s1ap{
+    100%{ opacity: 0;
+}
+}
+
+@-webkit-keyframes s1ap{
+    100%{ opacity: 0;
+}
+}
+
+#s2{
+    
+    position: absolute;
+    top:20%;
+    right:26%;
+    width:0px;
+    opacity: 0;
+    animation: s2ap 3s forwards;
+    -webkit-animation: s2ap 3s forwards;
+    animation-play-state: paused;
+    z-index:10;
+}
+
+@keyframes s2ap{
+    10%{width:50%;}
+    60%{opacity: 0;}
+    100%{opacity: 1;
+        width:50%;}
+}
+
+@-webkit-keyframes s2ap{
+    10%{width:50%;}
+    60%{opacity: 0;}
+    100%{opacity: 1;
+        width:50%;}
+}
+
+
+#s3{
+
+    position: absolute;
+    top:25%;
+    right:15%;
+    width:0px;
+    opacity: 0;
+    animation: s3ap 3s forwards;
+    -webkit-animation: s3ap 3s forwards;
+    animation-play-state: paused;
+    z-index:10;
+}
+
+@keyframes s3ap{
+    10%{width:70%;}
+    30%{opacity: 0;}
+    100%{opacity: 1;
+        width:70%;}
+}
+
+@-webkit-keyframes s3ap{
+    10%{width:70%;}
+    30%{opacity: 0;}
+    100%{opacity: 1;
+        width:70%;}
+}
+
+  
+#tb {
+    opacity: 1;
+    /*position*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    /*size of block*/
+    width: 55%;
+    height: 65%;
+
+    /*text*/
+    text-align: center;
+    line-height: 180%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white; 
+
+    /*border*/
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+
+    z-index: 1;
+}
+
+.text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.text-block h4{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.4cm;
+}
+
+.text-block p{
+    margin-top: -3px;
+    font-size: 0.45cm;
+    font-weight: 550;
+}
+
+.text-block hr{
+    height:0.1px;
+    border-width:0.05px;
+    color:white;
+}
+
+#option{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    margin-top: 1.5%;
+    padding: 0;
+    width: 600px;
+}
+
+#option button{
+    margin: 10px;
+    padding-left: 3%;
+    width: 400px;
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+    font-size: 0.38cm;
+    font-weight: 550;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/*When the cursor move over the option, it will show in this style.*/
+#option button:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+/*When the option have been clicked, it will show in this style.*/
+#option button:focus{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+
+
+
+@keyframes fadbt
+{   
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes fadbt /* Safari and Chrome */
+{
+    0%{opacity: 1;}
+
+    100%{opacity: 0;}
+}
+
+#nextBtn2{
+    position: absolute;
+    top: 75%;
+    right: 22.5%;
+    width: 160px;
+    height: 47px;
+    border:2px solid; 
+    border-color: white;
+
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    line-height: 1cm;
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+    font-family: 'Noto Serif TC', serif;
+
+    /*animation*/
+    z-index: 100;
+}
+#nextBtn2:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+
+
+#tb #sp{
+    font-size: 0.5cm;
+
+}
+
+
+
+#tb{
+    opacity: 1;
+    /*position*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    /*size of block*/
+    width: 55%;
+    height: 65%;
+
+    /*text*/
+    text-align: center;
+    line-height: 180%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white; 
+
+    /*border*/
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+    /*animation*/
+    animation: fadtb 3s ;
+    -webkit-animation: fadtb 3s ;
+    animation-fill-mode : forwards;
+    animation-play-state: paused;
+    z-index: 1;
+}
+
+@keyframes fadtb
+{   
+    0%{opacity: 1;}
+
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes fadtb /* Safari and Chrome */
+{
+    0%{opacity: 1;}
+
+    100%{opacity: 0;}
+}
+
+
+
+#ani1{
+    width:100px;
+	height:100px;
+    background:red;
+    position: absolute;
+    animation: mymove 5s ;
+    -webkit-animation: mymove 5s ;
+    animation-fill-mode : forwards;
+    animation-play-state: paused;
+    z-index: 2000;
+}
+
+
+
+@keyframes mymove
+{   
+    0%{right: 340px; top: 340px; opacity: 0;}
+    20%{right: 120px; top: 340px; opacity: 0.2;}
+    40%{right: 360px; top: 340px; opacity: 0.4;}
+    60%{right: 640px; top: 340px; opacity: 0.6;}
+    80%{right: 860px; top: 340px; opacity: 0.8;}
+    100%{right: 1500px; top: 340px; opacity: 1;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+    0%{right: 340px; top: 340px; opacity: 0;}
+    20%{right: 120px; top: 340px; opacity: 0.2;}
+    40%{right: 360px; top: 340px; opacity: 0.4;}
+    60%{right: 640px; top: 340px; opacity: 0.6;}
+    80%{right: 860px; top: 340px; opacity: 0.8;}
+    100%{right: 1500px; top: 340px; opacity: 1;}
+}
+
+#ani2{
+    width:100px;
+	height:100px;
+    background:green;
+    position: absolute;
+    animation: mymove 5s ;
+    -webkit-animation: mymove 5s ;
+    animation-fill-mode : forwards;
+    animation-play-state: paused;
+    z-index: 2000;
+}
+
+
+
+
+@keyframes mymove
+{   
+    0%{right: 340px; top: 340px; opacity: 0;}
+    20%{right: 120px; top: 340px; opacity: 0.2;}
+    40%{right: 360px; top: 340px; opacity: 0.4;}
+    60%{right: 640px; top: 340px; opacity: 0.6;}
+    80%{right: 860px; top: 340px; opacity: 0.8;}
+    100%{right: 1500px; top: 340px; opacity: 1;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+    0%{right: 340px; top: 340px; opacity: 0;}
+    20%{right: 120px; top: 340px; opacity: 0.2;}
+    40%{right: 360px; top: 340px; opacity: 0.4;}
+    60%{right: 640px; top: 340px; opacity: 0.6;}
+    80%{right: 860px; top: 340px; opacity: 0.8;}
+    100%{right: 1500px; top: 340px; opacity: 1;}
+}
+body {background: transparent}
+
+/* Smoke container */
+
+#smoke {
+	position: absolute;
+	z-index: 3;
+	width: 10px; height: 200px;
+	left: 53%; bottom: 145px;
+}
+
+/* smoke balls */
+
+#smoke span { 
+  display: block;
+	position: absolute;
+	bottom: -35px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid #f3f0f0f1;
+	border-radius: 35px;
+	left: -14px; opacity: 0;
+	transform: scale(0.2);
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(20px, -130px) }
+}
+
+#smoke .s0 { animation: smokeL 10s 0s infinite }
+#smoke .s1 { animation: smokeR 10s 1s infinite }
+#smoke .s2 { animation: smokeL 10s 2s infinite }
+#smoke .s3 { animation: smokeR 10s 3s infinite }
+#smoke .s4 { animation: smokeL 10s 4s infinite }
+#smoke .s5 { animation: smokeR 10s 5s infinite }
+#smoke .s6 { animation: smokeL 10s 6s infinite }
+#smoke .s7 { animation: smokeR 10s 7s infinite }
+#smoke .s8 { animation: smokeL 10s 8s infinite }
+#smoke .s9 { animation: smokeR 10s 9s infinite }
+
+#smoker{
+    position: absolute;
+    top: 54%;
+    right:32%;
+    width: 230x;
+    height: 200px;
+    z-index:500;
+}
+
+#music{
+    position: absolute;
+    z-index: 100;
+    top:88.3%;
+    right:80%;
+}

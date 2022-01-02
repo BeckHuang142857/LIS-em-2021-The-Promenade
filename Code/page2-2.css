@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height:100%;
+    width:100%;
+    overflow:hidden; /*hide the scroll bar*/
+    background-color: rgb(13,20,30);
+    font-family: 'Noto Serif TC', serif;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    right:3%;
+    width: 225x;
+    height: 180px;
+    z-index:300;
+}
+
+#background {
+    /*margin-top: -455px; adjust the vertical position of the image*/
+    height:100%;
+    width:100%;    
+    /*filter:brightness(30%); darkness of the image*/
+    z-index: 100;
+}
+#fd{
+    position: absolute;
+    top: -18%;
+    right:-280%;
+    z-index :-10;
+    width: 270%;
+    height: 90%;
+    animation: mew 18s linear;
+    -webkit-animation: mew 18s linear;
+    animation-play-state: paused;
+}
+@keyframes mew{
+    0%{right:-280%;}
+    30%{right:-280%;}
+    100%{right:100%; }
+}
+@-webkit-keyframes mew{
+    0%{right:-280%;}
+    30%{right:-280%;}
+    100%{right:100%; }
+}
+
+
+#fish{
+
+letter-spacing:0.2cm;
+font-size: 3cm;
+}
+
+#big{
+    font-size: 0.6cm;
+}
+#fd2{
+    position: absolute;
+    opacity: 0;
+    top: 80%;
+    right:-18%;
+    z-index :-10;
+    width: 130%;
+    height: 90%;
+    background-color: transparent;
+    animation: mew2 3s linear;
+    -webkit-animation: mew2 3s linear;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+@keyframes mew2{
+    0%{opacity: 0;}
+    100%{opacity: 1; }
+}
+@-webkit-keyframes mew2{
+    0%{opacity: 0;}
+    100%{opacity: 1; }
+}
+
+#fish2{
+    letter-spacing:0.4cm;
+    line-height: 1cm;
+    font-size: 0.6cm;
+    }
+
+    #fd3{
+        position: absolute;
+        opacity: 0;
+        top: 80%;
+        right:-18%;
+        z-index :-10;
+        width: 130%;
+        height: 90%;
+        background-color: transparent;
+        animation: mew3 3s linear;
+        -webkit-animation: mew3 3s linear;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    @keyframes mew3{
+        0%{opacity: 0;}
+        100%{opacity: 1; }
+    }
+    @-webkit-keyframes mew3{
+        0%{opacity: 0;}
+        100%{opacity: 1; }
+    }
+    
+    #fish3{
+        letter-spacing:0.4cm;
+        line-height: 1cm;
+        font-size: 0.6cm;
+        }
+
+    
+#tt{
+    position: absolute;
+    top: 0%;
+    right:0%;
+    z-index :100;
+    width: 100%;
+    height: 8%;
+    background-color: black;
+    border-bottom: 1px solid;
+}
+.container {
+    position: relative;
+
+}
+  
+.text-block {
+    /*position*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    /*size of block*/
+    width: 55%;
+    height: 65%;
+
+    /*text*/
+    text-align: center;
+    line-height: 180%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white; 
+
+    /*border*/
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+
+    z-index: 1;
+}
+
+.text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.text-block h4{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.4cm;
+}
+
+.text-block p{
+    margin-top: -3px;
+    font-size: 0.45cm;
+    font-weight: 550;
+}
+
+.text-block hr{
+    height:0.1px;
+    border-width:0.05px;
+    color:white;
+}
+
+#option{
+    position: relative;
+    height: 1000px;
+    width: 300px;
+    left: 50%;
+    top:58%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    margin-top: 1.5%;
+    padding: 0;
+    width: 600px;
+}
+
+#option button{
+    margin: 10px;
+    width: 400px;
+    height: 45px;
+    border-color:transparent;
+    border: none;
+    background-color: transparent;
+    color:transparent;
+    font-size: 0.38cm;
+    font-weight: 550;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/*When the cursor move over the option, it will show in this style.*/
+
+
+/*When the option have been clicked, it will show in this style.*/
+#option button:focus{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+#nextBtn{
+    position: absolute;
+    top: 74.5%;
+    right: 22.5%;
+    width: 250px;
+    height: 50px;
+
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+    font-family: 'Noto Serif TC', serif;
+    animation: btdp 3s;
+    -webkit-animation: btdp 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    z-index: 11;
+}
+
+@keyframes btdp{
+    100%{opacity: 0;}
+}
+@-webkit-keyframes btdp{
+    100%{opacity: 0;}
+}
+#nextBtn:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+#nextBtn2{
+    position: absolute;
+    top: 74.5%;
+    right: 22.5%;
+    width: 250px;
+    height: 50px;
+    opacity: 0;
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+
+    font-size: 0.45cm;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+    font-family: 'Noto Serif TC', serif;
+    animation: btdp2 3s;
+    -webkit-animation: btdp2 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    z-index: 10;
+}
+
+@keyframes btdp2{
+    100%{opacity: 1;}
+}
+@-webkit-keyframes btdp2{
+    100%{opacity: 1;}
+}
+#nextBtn2:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+#h41{
+    animation: h41dp 3s;
+    -webkit-animation: h41dp 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+@keyframes h41dp{
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes h41dp{
+    100%{opacity: 0;}
+}
+
+#can{
+    position: absolute;
+    width:190px;
+    top:-40%;
+    right:13%;
+    animation: canap 5s;
+    -webkit-animation: canap 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes canap{
+   100%{ top:-45%;
+    right: 32%;
+       transform: scale(2.2);}
+}
+@-webkit-keyframes canap{
+    100%{ top:-45%;
+        right: 32%;
+           transform: scale(2.2);}
+ }
+
+
+#can:hover{
+    
+    transform: scale(1.1);
+}
+
+#can:focus{
+    
+    transform: scale(1.1);
+}
+
+#noodle{
+    position: absolute;
+    width:200px;
+    top:-38%;
+    right:55%;
+    animation: nnap 5s;
+    -webkit-animation: nnap 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes nnap{
+   100%{ top:-45%;
+    right: 32%;
+       transform: scale(2.2);}
+}
+@-webkit-keyframes nnap{
+    100%{ top:-45%;
+        right: 32%;
+           transform: scale(2.2);}
+ }
+
+
+#noodle:hover{
+    transform: scale(1.1);
+
+}
+#noodle:focus{
+    transform: scale(1.1);
+
+}

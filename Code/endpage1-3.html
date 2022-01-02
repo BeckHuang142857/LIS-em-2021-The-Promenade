@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Booth</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="endpage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+                
+    </head>
+
+    <body>
+        <image id="logo" src="../img/logo.png" style="-webkit-filter:brightness(200%)"></image>
+        <div class="container" >
+            <video autoplay muted loop id="background">
+                <source src="https://imgur.com/XpceYIP.mp4" type="video/mp4">
+                </video>
+              
+            <div class="text-block" id="vanish">
+                <h4>出票口</h4>
+                <hr>
+                <br>
+                <h4>此趟短暫出走即將在這裡結束</h4>
+                <h4>請記得領取你的票卡</h4>  
+                <h4>裡面紀錄著走訪過的地點以及本團隊推薦給你的音樂</h4>
+                
+                <h4>也請不要遺忘你的物品</h4>
+                <h4>「電腦、參考書、手機、錢包、補發過的學生證」</h4>
+                <h4>漫遊臺大感謝你的光臨</h4>
+                <button type="button" id="nextBtn">我要取票</button>
+            </div>  
+            
+            <!--Text of "Ticket"-->
+            <div class="ticket" id="ticket1">
+                <h4>Ticket 取票口</h4>
+            </div>
+
+            <!--右下角的小按鈕-->
+            <div><img  id="but1" src="../img/topcon.png" style="-webkit-filter:brightness(200%)"></div>
+            <div><img  id="but2" src="../img/botcon.png" style="-webkit-filter:brightness(200%)"></div>
+
+            <!--右下角小按鈕上方的箭頭-->
+            <div></div><img id="point"  src="../img/point.png">
+            <div></div><img id="point2"  src="../img/point.png">
+            <!--慢慢拖曳出來的Ticket-->
+            <div><img id="receipt" src="../img/receipt_new.png"></div>
+            
+            <!--用來擋住背景和車票的黑框
+            <div id="block"></div>-->
+
+            <!--點擊Ticket之後，顯示的車票內容-->
+            <div class="text-block" id="ticket_content">
+
+                <image id="logo2" src="../img/logo.png" style="-webkit-filter:brightness(200%)"></image>
+                <image id="code" src="../img/code.png"></image>
+                
+                <div id="sqr"></div>
+                <div id="date"><h4>22-01-06</h4></div>
+                <div id="line"></div>
+
+                <!--框框展開後再將文字浮出   -->
+                <div id="content">
+                <h4 id="p1">臺大總圖</h4>
+                <h4 id="p2">新月台</h4>
+                <h4 id="p3">喜鵲咖啡</h4>
+                <h4 id="p4">公館捷運站</h4>
+                
+            </div>
+            
+            <iframe id="music" src="https://streetvoice.com/music/embed/?id=662161" width="330" height="100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+            <img id="log" src="../img/1-3log.png" ></img>
+            <div id="tip3"><h4 id="tip4">-點擊QR code線上播放-<h4></div>
+            </div>
+            <div id="tip"><h4 id="tip2">點擊票券任何一處<h4></div>
+                <a style="text-decoration:none;" href="../messageBoard/messageBoard.html" id="next"> 進入留言板</a>
+            
+        </div>
+        
+        <script src="endpage.js"></script>
+    </body>
+</html>

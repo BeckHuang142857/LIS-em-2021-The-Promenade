@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height:100%;
+    width:100%;
+    overflow:hidden; /*hide the scroll bar*/
+    background-color: rgb(13,20,30);
+    font-family: 'Noto Serif TC', serif;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    right:3%;
+    width: 225x;
+    height: 180px;
+    z-index:300;
+}
+
+#background {
+    /*margin-top: -455px; adjust the vertical position of the image*/
+    height:100%;
+    width:100%;    
+    /*filter:brightness(30%); darkness of the image*/
+    z-index: 100;
+}
+
+.container {
+    position: relative;
+
+}
+  
+.text-block {
+    /*position*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    /*size of block*/
+    width: 55%;
+    height: 65%;
+
+    /*text*/
+    text-align: center;
+    line-height: 180%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white; 
+
+    /*border*/
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+
+    z-index: 1;
+}
+
+.text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.text-block h4{
+    letter-spacing: 0.2em;
+    line-height: 80%;
+    font-size: 0.4cm;
+}
+
+.text-block p{
+    margin-top: -3px;
+    font-size: 0.45cm;
+    font-weight: 550;
+}
+
+.text-block hr{
+    height:0.1px;
+    border-width:0.05px;
+    color:white;
+}
+
+#option{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    margin-top: 1.5%;
+    padding: 0;
+    width: 600px;
+}
+
+#option button{
+    margin: 10px;
+    padding-left: 3%;
+    width: 400px;
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+    font-size: 0.38cm;
+    font-weight: 550;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/*When the cursor move over the option, it will show in this style.*/
+#option button:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+/*When the option have been clicked, it will show in this style.*/
+#option button:focus{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+#nextBtn{
+    position: absolute;
+    top: 74.5%;
+    right: 22.5%;
+    width: 250px;
+    height: 50px;
+
+    border-color: white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+
+    font-size: 0.45cm;
+    font-weight: 550;
+    font-family: 'Noto Serif TC', serif;
+    text-align: left;
+    padding-left: 1.5%;
+    letter-spacing: 0.05em;
+
+    z-index: 10;
+}
+#nextBtn:hover{
+    background-color:rgba(245, 245, 245, 0.233);
+}
+
+#music{
+    position: absolute;
+    z-index: 100;
+    top:91.1%;
+    right:79.15%;
+}
