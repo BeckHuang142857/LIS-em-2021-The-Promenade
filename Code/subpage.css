@@ -48,7 +48,7 @@ body {
     /*text*/
     text-align: center;
     line-height: 180%;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
     overflow-x: hidden;
     
     background-color: rgba(0, 0, 0, 0.65);
