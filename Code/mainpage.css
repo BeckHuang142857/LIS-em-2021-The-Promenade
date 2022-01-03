@@ -506,4 +506,18 @@ iframe{
     background-color: transparent;
 }
 
-  
+/*setting of scrollbar*/
+::-webkit-scrollbar {
+    background: black;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(30,30,30);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar-track-piece{
+    background: rgba(0, 0, 0, 0.2);
+}
