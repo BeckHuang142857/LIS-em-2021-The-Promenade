@@ -148,7 +148,7 @@ font-size: 3cm;
     /*text*/
     text-align: center;
     line-height: 180%;
-    overflow-y: auto;
+    overflow-y: hidden; /*不確定Safari上的效果，待確認*/
     overflow-x: hidden;
     
     background-color: rgba(0, 0, 0, 0.65);
